@@ -1,0 +1,22 @@
+Logistic Regression Model Evaluation (Threshold = 0.5):
+-------------------------------------------------------
+Precision: 0.9750
+Recall:    0.9286
+ROC-AUC:   0.9960
+
+5. Sigmoid Function Explanation
+-------------------------------
+Logistic regression uses the sigmoid function: sigma(z) = 1 / (1 + e^-z)
+This function maps raw continuous scores (z) into probabilities between 0 and 1.
+The output represents the probability that the observation belongs to the positive class (Malignant).
+
+Threshold Tuning Experiment
+---------------------------
+Threshold = 0.3 | Precision = 0.9762, Recall = 0.9762
+Threshold = 0.5 | Precision = 0.9750, Recall = 0.9286
+Threshold = 0.7 | Precision = 1.0000, Recall = 0.9048
+
+Conclusion on Tuning threshold:
+- Lowering the threshold (e.g. to 0.3) increases recall (catches more true positives) but decreases precision (more false positives).
+  In medical domains like cancer prediction, high recall is often priority to ensure no patient who is sick is missed.
+- Raising the threshold (e.g. to 0.7) increases precision (more confident in positive predictions) but decreases recall (might miss true positives).
