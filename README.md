@@ -1,4 +1,4 @@
-# Task 4: Classification with Logistic Regression
+#Classification with Logistic Regression
 
 ## Objective
 Build a binary classifier using logistic regression to predict breast cancer diagnosis (Malignant vs. Benign).
